@@ -17,7 +17,6 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     //MARK: - IBOutlets
     @IBOutlet weak var startButton: UIButton!
-    // @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     
 
@@ -26,9 +25,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     var timer_1 = Timer()
  
     var startTapped = false
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var startTimestamp = 0.0
-    // var reactiveTime = 0.0
     var isTimeRunning = false
     var backgroundtime = 0.0
     var inBackground = true
